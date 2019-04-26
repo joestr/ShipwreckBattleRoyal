@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Shipwreck: Battle Royal</string>
+    <!-- activity_main.xml -->
+    <string name="activity_main_username">Username</string>
+    <string name="activity_main_password">Password</string>
+    <string name="activity_main_login">Log In</string>
+    <string name="activity_main_signin">Sign In</string>
+    <!-- activity_home.xml -->
+    <string name="activity_home_textview_username">Username</string>
+    <string name="activity_home_button_lobby">Go to lobby</string>
+    <string name="activity_home_button_statistics">Statistics</string>
+    <string name="activity_home_button_signout">Sign out</string>
 </resources>

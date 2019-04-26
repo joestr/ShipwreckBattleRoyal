@@ -4,57 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.HomeActivity">
 
-    <EditText
-        android:id="@+id/editText_Username"
+    <TextView
+        android:id="@+id/activity_home_textView_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/activity_main_username"
-        android:inputType="textPersonName"
+        android:text="@string/activity_home_textview_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText_Password"
+    <Button
+        android:id="@+id/activity_home_button_lobby"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/activity_main_password"
-        android:inputType="textPassword"
+        android:text="@string/activity_home_button_lobby"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Username" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_home_textView_username" />
 
     <Button
-        android:id="@+id/button_LogIn"
+        android:id="@+id/activity_home_button_statistics"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/activity_main_login"
+        android:text="@string/activity_home_button_statistics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Password" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_home_button_lobby" />
 
     <Button
-        android:id="@+id/button_SignIn"
+        android:id="@+id/activity_home_button_signout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/activity_main_signin"
+        android:text="@string/activity_home_button_signout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_LogIn" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_home_button_statistics" />
 </android.support.constraint.ConstraintLayout>
