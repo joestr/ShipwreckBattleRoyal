@@ -1,5 +1,6 @@
 package xyz.joestr.shipwreckbattleroyal.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -55,6 +56,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         switch(view.getId()) {
             case(R.id.activity_home_button_lobby): {
 
+                Intent lobbyIntent = new Intent(this, LobbyActivity.class);
+                lobbyIntent.putExtra("username", this.currentUsername);
+                this.startActivity(lobbyIntent);
                 break;
             }
             case(R.id.activity_home_button_statistics): {

@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // Get the constrols/views
             this.editTextUsername = (EditText) this.findViewById(R.id.editText_Username);
             this.editTextPassword = (EditText) this.findViewById(R.id.editText_Password);
-            this.buttonSignIn = (Button) this.findViewById(R.id.button_LogIn);
+            this.buttonSignIn = (Button) this.findViewById(R.id.button_SignIn);
             this.buttonSignUp = (Button) this.findViewById(R.id.button_SignIn);
 
             // Setup listeners
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         switch(view.getId()) {
-            case(R.id.button_LogIn): {
+            case(R.id.button_SignUp): {
 
                 this.user = new User(
                         this.editTextUsername.getText().toString(),
